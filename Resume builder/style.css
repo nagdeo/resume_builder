@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #fff;
+    --primary-background: coral;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: Center;
+    box-shadow: 0 2px 10px var(--primary-background)
+}
+
+.logo {
+    padding: 10px;
+    border-radius: 20px;
+    background: var(--primary-background);
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    font-weight: bolder;
+}

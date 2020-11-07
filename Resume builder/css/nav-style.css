@@ -1,6 +1,6 @@
 :root {
-    --primary-color: rgb(97, 180, 207);
-    --primary-background: #fff;
+    --primary-color: cadetblue;
+    --primary-background: #3C4D58;
     --secondary-color: rgb(240, 138, 54);
 }
 
@@ -68,7 +68,8 @@ body {
     display: flex;
     align-items: center;
     padding: 2px;
-    position: relative;
+    position: absolute;
+    right: 0px;
 }
 
 .nav ul li {
@@ -88,15 +89,15 @@ body {
     background: var(--primary-background);
     border-radius: 10px;
     transition: 0.3s;
+    color:white;
 }
 
 .nav ul li>div:hover {
-    background: var(--primary-color);
-    color: var(--primary-background);
+   opacity:0.5;
 }
 
 .nav ul li>div:hover a {
-    color: var(--primary-background);
+    
 }
 
 .nav ul li a {
@@ -107,6 +108,7 @@ body {
     color: var(--primary-color);
     padding: 10px;
     font-size: 1.2rem;
+    color:white;
 }
 
 

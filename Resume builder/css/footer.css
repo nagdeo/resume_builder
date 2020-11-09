@@ -1,63 +1,67 @@
    footer {
-    text-align: center;
- 
-  background-color: white;
-  color: white;
-  position: absolute;
-    bottom: 0;
-    width: 100%;
-left:0;
-overflow-x:hidden;
+     text-align: center;
 
-}
+     background-color: white;
+     color: white;
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     left: 0;
+     overflow-x: hidden;
 
-.social-links{
-  padding:7px 0px;
-  background:#3C4D58;
-}
-  .fa {
-  padding: 9px 1px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  color:white;
-}
+   }
 
-.fa:hover {
-    opacity: 0.7;
-}
+   .social-links {
+     padding: 7px 0px;
+     background: #3C4D58;
+   }
 
-.fa-linkedin {
-  //background: #007bb5;
-  color: white;
-}
-.landDiv{
-  background:cadetblue;
-  margin-bottom:1rem;
-  height:10rem;
-padding: 20px;
-}
-.copyright{
-  background:#242D33;
-  padding:1rem;
-  margin:0px;
-}
-  
-.freeRes{
+   .fa {
+     padding: 9px 1px;
+     font-size: 30px;
+     width: 50px;
+     text-align: center;
+     text-decoration: none;
+     margin: 5px 2px;
+     color: white;
+   }
 
-   font-size: 37px;
-    margin: 0px;
-}
-.btnDreamJob{
+   .fa:hover {
+     opacity: 0.7;
+   }
 
-  margin-top: 3rem;
-    padding: 1rem;
-    border-radius: 30px;
-    color: black;
-    background: repeating-linear-gradient(45deg, white, transparent 100px);
-    border: 1px solid white;
-    outline:none;
-    cursor:pointer;
-}
+   .fa-linkedin {
+     /* background: #007bb5; */
+     color: white;
+   }
+
+   .landDiv {
+     background: cadetblue;
+     margin-bottom: 1rem;
+     height: 10rem;
+     padding: 20px;
+   }
+
+   .copyright {
+     background: #242D33;
+     padding: 1rem;
+     margin: 0px;
+   }
+
+   .freeRes {
+
+     font-size: 37px;
+     margin: 0px;
+   }
+
+   .btnDreamJob {
+
+     margin-top: 1rem;
+     padding: 1rem;
+     border-radius: 30px;
+     color: black;
+     background: repeating-linear-gradient(45deg, white, transparent 100px);
+     border: 1px solid white;
+     outline: none;
+     cursor: pointer;
+   }

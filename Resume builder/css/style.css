@@ -25,3 +25,7 @@
     font-size: 1.7rem;
     font-weight: bolder;
 }
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }

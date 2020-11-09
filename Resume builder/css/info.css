@@ -1,59 +1,141 @@
-:root {
-    --primary-color: rgb(97, 180, 207);
-    --primary-background: #fff;
-    --secondary-color: #CF61B4;
-    --tertiary-color: #B4CF61;
-}
-
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body {
+.heading1 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.heading2 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.personal-info fieldset {
+    width: 49%;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.personal-info input {
+    padding: 10px;
+    font-size: 1rem;
     width: 100%;
-    min-height: 100vh;
-}
-
-.info {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    /* min-width: 50%; */
-    /* min-height: 200px; */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px var(--primary-color);
-}
-
-.entry {
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-    margin: 10px;
-}
-
-.entry label {
-    display: block;
-    min-width: 100px;
-    height: 100%;
-}
-
-.entry input {
     border: none;
     outline: none;
-    border-bottom: 1px solid var(--primary-color);
-    padding: 5px;
+    text-transform: capitalize;
+
 }
 
-.info .submit {
-    display: block;
-    margin-left: auto;
-    margin-right: 10px;
+.personal-info legend {
+    font-size: 1.4rem;
+    font-style: inherit;
+    font-family: 'Oleo Script Swash Caps', serif;
+    color: cadetblue;
+}
+
+.topNavbar {
+    padding: 15px;
+    display: flex;
+}
+
+.topNav {
+    padding: 1rem 1.4rem;
+    text-align: center;
+
+    font-size: 30px;
+    color: cadetblue;
+    text-shadow: 1px 1px 3px cadetblue;
+}
+
+.topNavbar>div {
+    margin: auto;
+}
+
+.circle {
+
+    border-radius: 9px;
+    border: 1px solid;
+    width: 1rem;
+    margin: auto;
+    height: 1rem;
+}
+
+.hrLine {
+    /* position: relative;
+    top: -1.5rem; */
+    transform: translateY(-1.5rem);
+}
+
+.personal-info {
+    padding: 15px;
+}
+
+.personal-info form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personal-info form legend {
+    margin-left: 1rem;
+}
+
+.delete-education {
     outline: none;
-    border: 1px solid var(--primary-color);
+    padding: 5px;
+    margin: 10px;
+    margin-left: 0;
+    font-weight: bolder;
+    color: cadetblue;
+    cursor: pointer;
+}
+
+.add-education .btn {
+    border: none;
+    outline: none;
+    font-size: medium;
+    color: cadetblue;
+    cursor: pointer;
+}
+
+.add-education .btn span {
+    font-weight: bolder;
+}
+
+.add-education form input {
     padding: 5px;
     font-size: 1rem;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.add-education form button {
+    padding: 5px;
+    outline: none;
+    font-size: medium;
+    color: cadetblue;
     cursor: pointer;
+}
+
+.education ul {
+    box-shadow: -2px 0 0 cadetblue;
+    padding-left: 5px;
+}
+
+.education ul li {
+    list-style: none;
+}
+
+.education ul li p {
+    background: yellow;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 2px;
+    padding: 0 10px;
 }

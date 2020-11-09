@@ -1,39 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>info</title>
-    <link rel="stylesheet" href="./css/info.css">
+  <link rel="stylesheet" href="css/info.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oleo Script Swash Caps">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="info">
-        <form action="">
-            <div class="entry">
-                <label for="fName">First Name</label>
-                <input type="text" name="" id="">
-            </div>
-            <div class="entry">
-                <label for="lName">Last Name</label>
-                <input type="text" name="" id="">
-            </div>
-            <div class="entry">
-                <label for="mobile">Mobile</label>
-                <input type="text" name="" id="">
-            </div>
-            <div class="entry">
-                <label for="city">City</label>
-                <input type="text" name="" id="">
-            </div>
-            <div class="entry">
-                <label for="state">State</label>
-                <input type="text" name="" id="">
-            </div>
-            <button class="submit">Done</button>
-        </form>
+  <div class="topNavbar">
+    <div>
+      <div class="topNav">Personal Info</div>
+      <div class="circle"></div>
     </div>
+    <div>
+      <div class="topNav">Edcation</div>
+      <div class="circle"></div>
+    </div>
+    <div>
+      <div class="topNav">Experience</div>
+      <div class="circle"></div>
+    </div>
+    <div>
+      <div class="topNav">Skills</div>
+      <div class="circle"></div>
+    </div>
+    <div>
+      <div class="topNav">Projects</div>
+      <div class="circle"></div>
+    </div>
+    <div>
+      <div class="topNav">Achievements</div>
+      <div class="circle"></div>
+    </div>
+  </div>
+  <hr class="hrLine">
+
+  <div class="personal-info">
+    <h3 class="heading1">COMPLETE YOUR RESUME HEADING</h3>
+    <h5 class="heading2"> Employers will use this information to contact you.</h5>
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>First Name</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>Last Name</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>City</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>State</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>Country</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>Zip Code</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>Email</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>Phone</legend>
+        <input type="text">
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="education" style="padding:30px;">
+    <h2>Your Education</h2>
+    <ul>
+      
+    </ul>
+    <button class="delete-education" onclick="deleteEducationHandler()">Delete Education</button>
+    <div class="add-education">
+      <div class="btn" onclick="addEducationButtonHandler()">Add Education <span>+</span></div>
+    </div>
+  </div>
+  <script src="./script/info.js"></script>
 </body>
 
 </html>

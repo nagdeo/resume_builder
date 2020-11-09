@@ -1,136 +1,90 @@
-<html>
+<!DOCTYPE html>
+
 <head>
-  <link rel="stylesheet" href="css/nav-style.css">
+  <link rel="stylesheet" href="css/info.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oleo Script Swash Caps">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-  .heading1{
-    text-align: center;
-    color: black;
-    font-size: 30px;
-  }
-  .heading2{
-    text-align: center;
-    font-size: 20px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  fieldset{
-      width: 49%;
-      margin-right: 1rem;
-      margin-bottom: 3rem;
-  }
-
-  input{
-      padding: 1rem 1rem;
-      font-size: 1rem;
-      width: 100%;
-     border: none;outline: none;
-     text-transform: capitalize;
-   
-  }
-  legend{
-    font-size: 1.4rem;
-    font-style: inherit;
-    font-family: 'Oleo Script Swash Caps', serif;
-    color: cadetblue;
-  }
-  .topNav{
-    padding: 1rem 1.4rem;
-    text-align: center;
-  
-    font-size: 30px;
-    color: cadetblue;
-    text-shadow: 1px 1px 3px cadetblue;
-  }
-  .topNavbar > div{
-    margin: auto;
-  }
-  .circle{
-   
-    border-radius: 9px;
-    border: 1px solid;
-    width: 1rem;
-    margin: auto;
-    height: 1rem;
-  }
-  .hrLine{
-    position: relative;
-    top: -1.5rem;
-  }
-  </style>
 </head>
 
 <body>
-  <div style="padding: 15px;display: flex;"  class="topNavbar">
-     <div>
-       <div class="topNav">Personal Info</div>
-       <div class="circle"></div>
-     </div>
-     <div>
-       <div  class="topNav">Edcation</div>
-       <div class="circle"></div>
-     </div>
-     <div>
-       <div  class="topNav">Experience</div>
-       <div class="circle"></div>
-     </div>
-      <div>
-        <div  class="topNav">Skills</div>
-        <div class="circle"></div>
-      </div>
-      <div>
-        <div class="topNav">Projects</div>
-        <div class="circle"></div>
-      </div>
-      <div>
-        <div class="topNav">Achievements</div>
-        <div class="circle"></div>
-      </div> 
+  <div class="topNavbar">
+    <div>
+      <div class="topNav">Personal Info</div>
+      <div class="circle"></div>
+    </div>
+    <div>
+      <div class="topNav">Edcation</div>
+      <div class="circle"></div>
+    </div>
+    <div>
+      <div class="topNav">Experience</div>
+      <div class="circle"></div>
+    </div>
+    <div>
+      <div class="topNav">Skills</div>
+      <div class="circle"></div>
+    </div>
+    <div>
+      <div class="topNav">Projects</div>
+      <div class="circle"></div>
+    </div>
+    <div>
+      <div class="topNav">Achievements</div>
+      <div class="circle"></div>
+    </div>
   </div>
   <hr class="hrLine">
- 
-<div style="padding:15px;">
+
+  <div class="personal-info">
     <h3 class="heading1">COMPLETE YOUR RESUME HEADING</h3>
     <h5 class="heading2"> Employers will use this information to contact you.</h5>
-    <form action="/action_page.php" style="display: flex;flex-wrap: wrap;">
-        <fieldset >
-          <legend style="margin-left: 1rem;">First  Name</legend>    
-          <input type="text" style="">  
-        </fieldset> 
-        <fieldset >
-            <legend style="margin-left: 1rem;">Last  Name</legend>    
-            <input type="text" >  
-          </fieldset> 
-          <fieldset >
-            <legend style="margin-left: 1rem;">City</legend>    
-            <input type="text" >  
-          </fieldset> 
-          <fieldset>
-            <legend style="margin-left: 1rem;">State</legend>    
-            <input type="text" >  
-          </fieldset> 
-          <fieldset >
-            <legend style="margin-left: 1rem;">Country</legend>    
-            <input type="text">  
-          </fieldset> 
-          <fieldset >
-              <legend style="margin-left: 1rem;">Zip  Code</legend>    
-              <input type="text" >  
-            </fieldset> 
-            <fieldset >
-              <legend style="margin-left: 1rem;">Email</legend>    
-              <input type="text" >  
-            </fieldset> 
-            <fieldset>
-              <legend style="margin-left: 1rem;">Phone</legend>    
-              <input type="text" >  
-            </fieldset> 
-           
-
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>First Name</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>Last Name</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>City</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>State</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>Country</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>Zip Code</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>Email</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>Phone</legend>
+        <input type="text">
+      </fieldset>
     </form>
-      
+  </div>
 
-</div>
+  <div class="education" style="padding:30px;">
+    <h2>Your Education</h2>
+    <ul>
+      
+    </ul>
+    <button class="delete-education" onclick="deleteEducationHandler()">Delete Education</button>
+    <div class="add-education">
+      <div class="btn" onclick="addEducationButtonHandler()">Add Education <span>+</span></div>
+    </div>
+  </div>
+  <script src="./script/info.js"></script>
 </body>
+
 </html>

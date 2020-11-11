@@ -1,33 +1,82 @@
-const addEducation = document.querySelector(".add-education");
+// var option = select.options[select.selectedIndex];
+const edu = document.querySelector(".education");
+const addButtonEdu = document.querySelector(".education .add");
+const deleteButtonEdu = document.querySelector(".education .delete");
+const addEdu = document.querySelector(".add-education");
+const formEdu = addEdu.querySelector("form");
+const backEdu = addEdu.querySelector(".back");
+const clearEdu = addEdu.querySelector(".clear");
+const saveEdu = addEdu.querySelector(".save");
+const inputsEdu = addEdu.querySelectorAll("input");
+const selectEdu = addEdu.querySelector("select");
 
-window.addEventListener("load", populateEducation);
+const cardsEdu = edu.querySelector(".cards");
 
-function deleteEducationHandler() {
+let item = {};
+let items = JSON.parse(localStorage.getItem("educationDetail")) || [];
+window.addEventListener("load", () => {
+    populateCards();
+})
+function populateCards() {
+    let html = "";
+    items.forEach(elem => {
+        html += `
+        <div class="card">
+        <div class="title">${elem.course}</div>
+        <div class="body">
+          <p>Field: <b>${elem.field}</b></p>
+          <p>Graduation: <b>${elem.date}</b></p>
+          <p><b>${elem.college} ${elem.city} ${elem.state}</b></p>
+        </div>
+      </div>
+        `;
+    })
+    cardsEdu.innerHTML = html;
+}
+
+
+addButtonEdu.addEventListener("click", () => {
+    addEdu.style.transform = "translateX(0)";
+    edu.style.overflow = "visible";
+})
+deleteButtonEdu.addEventListener("click", () => {
+    cardsEdu.innerHTML = "";
     localStorage.clear();
-    let ul = document.querySelector(".education ul");
-    ul.innerHTML = "";
-}
-
-function addEducationButtonHandler() {
-    let html = `<form onsubmit="addEducationInputHandler()"><input type="text"></input> <button>Add</button>`;
-    addEducation.innerHTML = html;
-}
-
-function addEducationInputHandler() {
-    let value = addEducation.querySelector("input").value;
-    let html = `<div class="btn" onclick="addEducationButtonHandler()">Add Education <span>+</span></div>`;
-    addEducation.innerHTML = html;
-    if (!value) return;
-    value = value.charAt(0).toUpperCase() + value.slice(1);
-    let ul = document.querySelector(".education ul");
-    let education = JSON.parse(localStorage.getItem("education")) || [];
-    let child = `<li><p>${value}</p></li>`;
-    education.push(child);
-    ul.innerHTML += child;
-    localStorage.setItem("education", JSON.stringify(education));
-}
-function populateEducation() {
-    let ul = document.querySelector(".education ul");
-    let education = JSON.parse(localStorage.getItem("education")) || [];
-    ul.innerHTML = education.join("");
-}
+    items = [];
+    item = {};
+})
+backEdu.addEventListener("click", () => {
+    addEdu.style.transform = "translateX(150%)";
+    edu.style.overflow = "hidden";
+})
+clearEdu.addEventListener("click", () => {
+    item = {};
+    formEdu.reset();
+})
+saveEdu.addEventListener("click", () => {
+    var emptyValue = false;
+    inputsEdu.forEach(elem => {
+        let key = elem.dataset.for;
+        let value = elem.value;
+        if (value == "") {
+            emptyValue = true;
+        }
+        item[key] = value;
+    })
+    let option = selectEdu.options[selectEdu.selectedIndex];
+    if (option.value == "") {
+        emptyValue = true;
+    }
+    item.course = option.value;
+    console.log(items);
+    if (!emptyValue) {
+        items.push(item);
+        console.log(items);
+        localStorage.setItem("educationDetail", JSON.stringify(items));
+        populateCards();
+        formEdu.reset();
+        backEdu.click();
+    } else {
+        emptyValue = false;
+    }
+})

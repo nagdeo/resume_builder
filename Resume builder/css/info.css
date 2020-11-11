@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    /* overflow-x: hidden; */
+}
+
 .heading1 {
     text-align: center;
     color: black;
@@ -86,56 +90,95 @@
     margin-left: 1rem;
 }
 
-.delete-education {
-    outline: none;
-    padding: 5px;
+.education {
+    position: relative;
+    width: fit-content;
+    min-height: fit-content;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: -2px 2px 20px rgb(170, 170, 170);
+    padding: 30px;
+    overflow: hidden;
+}
+
+.education .cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.education .card {
+    overflow: hidden;
+    height: fit-content;
+    max-width: 160px;
+    box-shadow: 1px 1px 10px grey;
     margin: 10px;
-    margin-left: 0;
+}
+
+.card .title {
+    text-align: center;
     font-weight: bolder;
+    font-size: 1.2rem;
+    margin: 10px;
     color: cadetblue;
+}
+
+.card .body {
+    padding: 10px;
+    padding-top: 0;
+}
+
+.education button {
+    padding: 3px;
+    outline: none;
+    border: 1px solid cadetblue;
+    color: #fff;
+    background-color: cadetblue;
     cursor: pointer;
 }
 
-.add-education .btn {
+.education button:hover {
+    color: cadetblue;
+    background-color: #fff;
+}
+
+.add-education {
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    height: fit-content;
+    width: 80%;
+    transform: translateX(150%);
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+    padding: 10px;
+    background: #fff;
+    transition: 0.5s ease-out;
+}
+
+.add-education input {
     border: none;
     outline: none;
-    font-size: medium;
-    color: cadetblue;
-    cursor: pointer;
+    width: 100%;
+    height: 100%;
 }
 
-.add-education .btn span {
-    font-weight: bolder;
-}
-
-.add-education form input {
-    padding: 5px;
-    font-size: 1rem;
-    outline: none;
-    text-transform: capitalize;
-}
-
-.add-education form button {
+.add-education select {
     padding: 5px;
     outline: none;
-    font-size: medium;
-    color: cadetblue;
-    cursor: pointer;
 }
 
-.education ul {
-    box-shadow: -2px 0 0 cadetblue;
-    padding-left: 5px;
+.add-education fieldset {
+    margin: 3px;
 }
 
-.education ul li {
-    list-style: none;
+.add-education .save {
+    color: darkgreen;
+    background: lightgreen;
+    border: 1px solid lightgreen;
 }
 
-.education ul li p {
-    background: yellow;
-    display: inline-block;
-    font-size: 1.4rem;
-    margin: 2px;
-    padding: 0 10px;
+.add-education .save:hover {
+    background-color: #fff;
 }

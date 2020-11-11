@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* overflow-x: hidden; */
+}
+
+.heading1 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.heading2 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.personal-info fieldset {
+    width: 49%;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.personal-info input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+
+}
+
+.personal-info legend {
+    font-size: 1.4rem;
+    font-style: inherit;
+    font-family: 'Oleo Script Swash Caps', serif;
+    color: cadetblue;
+}
+
+.topNavbar {
+    padding: 15px;
+    display: flex;
+}
+
+.topNav {
+    padding: 1rem 1.4rem;
+    text-align: center;
+
+    font-size: 30px;
+    color: cadetblue;
+    text-shadow: 1px 1px 3px cadetblue;
+}
+
+.topNavbar>div {
+    margin: auto;
+}
+
+.circle {
+
+    border-radius: 9px;
+    border: 1px solid;
+    width: 1rem;
+    margin: auto;
+    height: 1rem;
+}
+.btnEducation{
+    float: right;
+    padding: 0.5rem 2rem;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    border-radius: 5px;
+    border: 1px solid cadetblue;
+    background: cadetblue;
+    color: white;
+    font-family: 'Oleo Script Swash Caps', serif;
+    cursor: pointer;
+    outline: none;
+}
+
+.hrLine {
+    /* position: relative;
+    top: -1.5rem; */
+    transform: translateY(-1.5rem);
+}
+
+.personal-info {
+    padding: 15px;
+}
+
+.personal-info form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personal-info form legend {
+    margin-left: 1rem;
+}
+
+.education {
+    position: relative;
+    width: fit-content;
+    min-height: fit-content;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: -2px 2px 20px rgb(170, 170, 170);
+    padding: 30px;
+    overflow: hidden;
+}
+
+.education .cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.education .card {
+    overflow: hidden;
+    height: fit-content;
+    max-width: 160px;
+    box-shadow: 1px 1px 10px grey;
+    margin: 10px;
+}
+
+.card .title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin: 10px;
+    color: cadetblue;
+}
+
+.card .body {
+    padding: 10px;
+    padding-top: 0;
+}
+
+.education button {
+    padding: 3px;
+    outline: none;
+    border: 1px solid cadetblue;
+    color: #fff;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.education button:hover {
+    color: cadetblue;
+    background-color: #fff;
+}
+
+.add-education {
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    height: fit-content;
+    width: 80%;
+    transform: translateX(150%);
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+    padding: 10px;
+    background: #fff;
+    transition: 0.5s ease-out;
+}
+
+.add-education input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+
+.add-education select {
+    padding: 5px;
+    outline: none;
+}
+
+.add-education fieldset {
+    margin: 3px;
+}
+
+.add-education .save {
+    color: darkgreen;
+    background: lightgreen;
+    border: 1px solid lightgreen;
+}
+
+.add-education .save:hover {
+    background-color: #fff;
+}

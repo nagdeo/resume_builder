@@ -1,149 +1,144 @@
-<html>
+<!DOCTYPE html>
+
 <head>
-  <link rel="stylesheet" href="css/nav-style.css">
+  <link rel="stylesheet" href="css/info.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oleo Script Swash Caps">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-  .heading1{
-    text-align: center;
-    color: black;
-    font-size: 30px;
-  }
-  .heading2{
-    text-align: center;
-    font-size: 20px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  fieldset{
-      width: 49%;
-      margin-right: 1rem;
-      margin-bottom: 3rem;
-  }
-
-  input{
-      padding: 1rem 1rem;
-      font-size: 1rem;
-      width: 100%;
-     border: none;outline: none;
-     text-transform: capitalize;
-   
-  }
-  legend{
-    font-size: 1.4rem;
-    font-style: inherit;
-    font-family: 'Oleo Script Swash Caps', serif;
-    color: cadetblue;
-  }
-  .topNav{
-    padding: 1rem 1.4rem;
-    text-align: center;
-  
-    font-size: 30px;
-    color: cadetblue;
-    text-shadow: 1px 1px 3px cadetblue;
-  }
-  .topNavbar > div{
-    margin: auto;
-  }
-  .circle{
-   
-    border-radius: 9px;
-    border: 1px solid;
-    width: 1rem;
-    margin: auto;
-    height: 1rem;
-  }
-  .hrLine{
-    position: relative;
-    top: -1.5rem;
-  }
-  .btnEducation{
-    float: right;
-    padding: 0.5rem 2rem;
-    font-size: 2rem;
-    margin-bottom: 5rem;
-    border-radius: 5px;
-    border: 1px solid cadetblue;
-    background: cadetblue;
-    color: white;
-    font-family: 'Oleo Script Swash Caps', serif;
-    cursor: pointer;
-    outline: none;
-  }
-  </style>
 </head>
 
 <body>
-  <div style="padding: 15px;display: flex;"  class="topNavbar">
-     <div>
-       <div class="topNav">Personal Info</div>
-       <div class="circle"></div>
-     </div>
-     <div>
-       <div  class="topNav">Edcation</div>
-       <div class="circle"></div>
-     </div>
-     <div>
-       <div  class="topNav">Experience</div>
-       <div class="circle"></div>
-     </div>
-      <div>
-        <div  class="topNav">Skills</div>
-        <div class="circle"></div>
-      </div>
-      <div>
-        <div class="topNav">Projects</div>
-        <div class="circle"></div>
-      </div>
-      <div>
-        <div class="topNav">Achievements</div>
-        <div class="circle"></div>
-      </div> 
+  <div class="topNavbar">
+    <div>
+      <div class="topNav">Personal Info</div>
+      <div class="circle"></div>
+    </div>
+    <div>
+      <div class="topNav">Education</div>
+      <div class="circle"></div>
+    </div>
+    <div>
+      <div class="topNav">Experience</div>
+      <div class="circle"></div>
+    </div>
+    <div>
+      <div class="topNav">Skills</div>
+      <div class="circle"></div>
+    </div>
+    <div>
+      <div class="topNav">Projects</div>
+      <div class="circle"></div>
+    </div>
+    <div>
+      <div class="topNav">Achievements</div>
+      <div class="circle"></div>
+    </div>
   </div>
   <hr class="hrLine">
- 
-<div style="padding:15px;">
+
+  <div class="personal-info">
     <h3 class="heading1">COMPLETE YOUR RESUME HEADING</h3>
     <h5 class="heading2"> Employers will use this information to contact you.</h5>
-    <form action="/action_page.php" style="display: flex;flex-wrap: wrap;">
-        <fieldset >
-          <legend style="margin-left: 1rem;">First  Name</legend>    
-          <input type="text" style="">  
-        </fieldset> 
-        <fieldset >
-            <legend style="margin-left: 1rem;">Last  Name</legend>    
-            <input type="text" >  
-          </fieldset> 
-          <fieldset >
-            <legend style="margin-left: 1rem;">City</legend>    
-            <input type="text" >  
-          </fieldset> 
-          <fieldset>
-            <legend style="margin-left: 1rem;">State</legend>    
-            <input type="text" >  
-          </fieldset> 
-          <fieldset >
-            <legend style="margin-left: 1rem;">Country</legend>    
-            <input type="text">  
-          </fieldset> 
-          <fieldset >
-              <legend style="margin-left: 1rem;">Zip  Code</legend>    
-              <input type="text" >  
-            </fieldset> 
-            <fieldset >
-              <legend style="margin-left: 1rem;">Email</legend>    
-              <input type="text" >  
-            </fieldset> 
-            <fieldset>
-              <legend style="margin-left: 1rem;">Phone</legend>    
-              <input type="text" >  
-            </fieldset> 
-           
-
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>First Name</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>Last Name</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>City</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>State</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>Country</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>Zip Code</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>Email</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset>
+        <legend>Phone</legend>
+        <input type="text">
+      </fieldset>
     </form>
-      
-       <button class="btnEducation">Next To Education</button>
-</div>
+    <button class="btnEducation" onclick="moveToEducation()">Next To Education</button>
+  </div>
+
+  <div class="education">
+    <h2>Education</h2>
+    <p>Add information about your educational background.</p>
+    <div class="cards">
+
+    </div>
+
+    <div class="add-education">
+      <h3>Add Education</h3>
+      <form action="">
+        <fieldset>
+          <legend>Institue name</legend>
+          <input data-for="college" type="text">
+        </fieldset>
+        <fieldset>
+          <legend>City</legend>
+          <input data-for="city" type="text">
+        </fieldset>
+        <fieldset>
+          <legend>State</legend>
+          <input data-for="state" type="text">
+        </fieldset>
+        <fieldset>
+          <legend>Field</legend>
+          <input data-for="field" type="text">
+        </fieldset>
+        <!-- <fieldset> -->
+        <legend>Degree</legend>
+        <select>
+          <option value="">Select a degree</option>
+          <option value="High School">High School</option>
+          <option value="Diploma">Diploma</option>
+          <option value="GED">GED</option>
+          <option value="Associate of Arts">Associate of Arts</option>
+          <option value="Associate of Science">Associate of Science</option>
+          <option value="Associate of Applied Science">Associate of Applied Science</option>
+          <option value="Bachelor of Arts">Bachelor of Arts</option>
+          <option value="Bachelor of Science">Bachelor of Science</option>
+          <option value="BBA">BBA</option>
+          <option value="BTECH">BTECH</option>
+          <option value="MTECH">MTECH</option>
+          <option value="Master of Arts">Master of Arts</option>
+          <option value="Master of Science">Master of Science</option>
+          <option value="MBA">MBA</option>
+          <option value="J.D.">J.D.</option>
+          <option value="M.D.">M.D.</option>
+          <option value="Ph.D.">Ph.D.</option>
+          <!-- <option value="Custom Degree">Custom Degree</option> -->
+        </select>
+        <!-- </fieldset> -->
+        <fieldset>
+          <legend>Graduation Date(mm/yy)</legend>
+          <input data-for="date" type="text">
+        </fieldset>
+      </form>
+      <button class="back">Back</button>
+      <button class="clear">Clear All</button>
+      <button class="save">Save</button>
+    </div>
+    <button class="add">Add Education</button>
+    <button class="delete">Delete Education</button>
+
+  </div>
+  <script src="./script/info.js"></script>
 </body>
+
 </html>

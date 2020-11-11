@@ -110,10 +110,14 @@ body {
 
 .education .card {
     overflow: hidden;
-    height: fit-content;
-    max-width: 160px;
+    min-height: 130px;
+    width: 180px;
     box-shadow: 1px 1px 10px grey;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .card .title {

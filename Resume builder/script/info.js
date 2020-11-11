@@ -12,7 +12,6 @@ const selectEdu = addEdu.querySelector("select");
 
 const cardsEdu = edu.querySelector(".cards");
 
-let item = {};
 let items = JSON.parse(localStorage.getItem("educationDetail")) || [];
 window.addEventListener("load", () => {
     populateCards();
@@ -27,7 +26,7 @@ function populateCards() {
           <p>Field: <b>${elem.field}</b></p>
           <p>Graduation: <b>${elem.date}</b></p>
           <p><b>${elem.college} ${elem.city} ${elem.state}</b></p>
-        </div>
+          </div>
       </div>
         `;
     })
@@ -43,17 +42,16 @@ deleteButtonEdu.addEventListener("click", () => {
     cardsEdu.innerHTML = "";
     localStorage.clear();
     items = [];
-    item = {};
 })
 backEdu.addEventListener("click", () => {
     addEdu.style.transform = "translateX(150%)";
     edu.style.overflow = "hidden";
 })
 clearEdu.addEventListener("click", () => {
-    item = {};
     formEdu.reset();
 })
 saveEdu.addEventListener("click", () => {
+    let item = {};
     var emptyValue = false;
     inputsEdu.forEach(elem => {
         let key = elem.dataset.for;
@@ -68,10 +66,8 @@ saveEdu.addEventListener("click", () => {
         emptyValue = true;
     }
     item.course = option.value;
-    console.log(items);
     if (!emptyValue) {
         items.push(item);
-        console.log(items);
         localStorage.setItem("educationDetail", JSON.stringify(items));
         populateCards();
         formEdu.reset();
@@ -80,3 +76,4 @@ saveEdu.addEventListener("click", () => {
         emptyValue = false;
     }
 })
+

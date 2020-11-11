@@ -12,6 +12,7 @@ const selectEdu = addEdu.querySelector("select");
 
 const cardsEdu = edu.querySelector(".cards");
 
+
 let items = JSON.parse(localStorage.getItem("educationDetail")) || [];
 window.addEventListener("load", () => {
     populateCards();
@@ -53,6 +54,7 @@ clearEdu.addEventListener("click", () => {
 saveEdu.addEventListener("click", () => {
     let item = {};
     var emptyValue = false;
+    let item = {};
     inputsEdu.forEach(elem => {
         let key = elem.dataset.for;
         let value = elem.value;
@@ -60,6 +62,7 @@ saveEdu.addEventListener("click", () => {
             emptyValue = true;
         }
         item[key] = value;
+        console.log(key);
     })
     let option = selectEdu.options[selectEdu.selectedIndex];
     if (option.value == "") {

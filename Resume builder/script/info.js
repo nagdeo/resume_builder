@@ -54,7 +54,7 @@ clearEdu.addEventListener("click", () => {
 saveEdu.addEventListener("click", () => {
     let item = {};
     var emptyValue = false;
-    let item = {};
+    
     inputsEdu.forEach(elem => {
         let key = elem.dataset.for;
         let value = elem.value;
